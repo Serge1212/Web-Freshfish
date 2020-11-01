@@ -25,6 +25,8 @@ namespace WebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ProductService>();
+            services.AddScoped<WorkerService>();
+            services.AddScoped<VehiclesService>();
             services.AddControllersWithViews();
         }
 
